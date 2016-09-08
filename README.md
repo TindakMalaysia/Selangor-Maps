@@ -1,5 +1,14 @@
 # Selangor Maps
 
+Electoral Boundaries for Selangor 2015: PAR, DUN, DM, PBT
+
+Includes population data for 2015 and 2013.
+
+Also, has metadata for source of data.
+
+Archived:
+==========
+
 Collection of Maps for Selangor in the form of ESRI Shapefiles, GeoJSON and KML.
 Derived from the hard work of the [Tindak Malaysia](http://www.tindakmalaysia.org) volunteers.
 
