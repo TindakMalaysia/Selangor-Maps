@@ -1,7 +1,7 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis projectname="" version="2.4.0-Chugiak">
     <title></title>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="08_Selangor_New_DM_wip20160923205005161" name="08-Selangor-New-DM-wip">
             <customproperties/>
@@ -9,7 +9,7 @@
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="08_Selangor_New_DM20160923204938921" name="08-Selangor-New-DM">
             <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="08_Sgr_13_Ori20160923121810202" name="08_Sgr_13_Ori">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="08_Sgr_13_Ori20160923121810202" name="08_Sgr_13_Ori">
             <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20160923121744816" name="Bing Road">
@@ -20,10 +20,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>11216038.40535841509699821</xmin>
-            <ymin>285307.69820229959441349</ymin>
-            <xmax>11354443.76569007709622383</xmax>
-            <ymax>434794.81210566830122843</ymax>
+            <xmin>11277934.01904014497995377</xmin>
+            <ymin>345302.25781323568662629</ymin>
+            <xmax>11334404.88823585957288742</xmax>
+            <ymax>363988.14705116715049371</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -64,9 +64,9 @@
                 <legendlayerfile isInOverview="0" layerid="08_Selangor_New_DM20160923204938921" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="08_Sgr_13_Ori" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="08_Sgr_13_Ori" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="08_Sgr_13_Ori20160923121810202" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="08_Sgr_13_Ori20160923121810202" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Road" showFeatureCount="0">
@@ -98,7 +98,7 @@
                 </spatialrefsys>
             </srs>
             <provider encoding="UTF-8">ogr</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "NAME", '&lt;NULL>' )</previewExpression>
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
@@ -333,10 +333,10 @@
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
             </edittypes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -364,7 +364,7 @@
                 </spatialrefsys>
             </srs>
             <provider encoding="UTF-8">ogr</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "NAME", '&lt;NULL>' )</previewExpression>
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
@@ -599,16 +599,16 @@
                     <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
             </edittypes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
             <attributeactions/>
         </maplayer>
-        <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>08_Sgr_13_Ori20160923121810202</id>
             <datasource>./08_Sgr_13_Ori.shp</datasource>
             <title></title>
@@ -630,7 +630,7 @@
                 </spatialrefsys>
             </srs>
             <provider encoding="UTF-8">ogr</provider>
-            <previewExpression></previewExpression>
+            <previewExpression>COALESCE( "NAME", '&lt;NULL>' )</previewExpression>
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
@@ -798,7 +798,7 @@
             </customproperties>
             <blendMode>0</blendMode>
             <featureBlendMode>0</featureBlendMode>
-            <layerTransparency>49</layerTransparency>
+            <layerTransparency>64</layerTransparency>
             <displayfield>NAME</displayfield>
             <label>0</label>
             <labelattributes>
