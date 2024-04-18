@@ -6,6 +6,8 @@ Includes population data for 2015 and 2013.
 
 Also, has metadata for source of data.
 
+The boundaries not valid post 2015
+
 Archived:
 ==========
 
